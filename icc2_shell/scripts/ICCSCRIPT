@@ -1,0 +1,47 @@
+source ./scripts/setup.tcl
+set search_path ""
+set link_library {ref/lib/db_nldm/saed14rvt_tt0p8v25c.db}
+set_app_options -list {lib.configuration.default_flow_setup {}};
+set_app_options -list {lib.configuration.output_dir {CLIBs}}
+set_app_options -list {lib.configuration.lef_site_mapping {}}
+set_app_options -list {lib.configuration.process_label_mapping {}}
+set_app_options -list {lib.configuration.display_lm_messages {false}}
+set search_path ""
+set link_library {ref/lib/db_nldm/saed14rvt_tt0p8v25c.db}
+set_app_options -list {lib.configuration.default_flow_setup {}};
+set_app_options -list {lib.configuration.output_dir {CLIBs}}
+set_app_options -list {lib.configuration.lef_site_mapping {}}
+ set_app_options -list {lib.configuration.process_label_mapping {}}
+set_app_options -list {lib.configuration.display_lm_messages {false}}
+
+create_lib -ref_libs {/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/NDM/saed14rvt_frame_only.ndm/} -technology /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/tech/NDM/saed14rvt_1p9m.tf cic
+
+read_verilog ../source/CIC_ADPCM_synthWrapper.v
+
+link_block
+
+initialize_floorplan
+source ../scripts/pg_core_straps.tcl
+source ../scripts/mcmm.tcl
+ create_placement -floorplan
+legalize_placement
+clock_opt
+route_auto
+route_eco
+source ../scripts/insert_stdcell.tcl
+check_clock_gate_library_cell_availability
+check_netlist
+check_pg_connectivity
+check_pg_drc
+check_pg_missing_vias
+check_routes
+check_routability
+check_placement_constraints
+check_pin_placement
+check_shapes -uncolored
+check_shapes -floating
+check_physical_constraints
+check_legality
+check_lvs
+source ../scripts/write_out.tcl
+write_verilog ../results/CIC_ICC_compiled_nopg.v

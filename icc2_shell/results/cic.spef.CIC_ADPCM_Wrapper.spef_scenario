@@ -1,0 +1,6 @@
+../results/cic.spef.CIC_ADPCM_Wrapper.tlup_max_25.spef.gz for scenarios: 
+	 scenario: func_slow, corner type: late/early
+
+../results/cic.spef.CIC_ADPCM_Wrapper.tlup_min_25.spef.gz for scenarios: 
+	 scenario: func_fast, corner type: late/early
+

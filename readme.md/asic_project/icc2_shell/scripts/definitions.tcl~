@@ -1,0 +1,11 @@
+set search_path [list \
+  /var/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/tech/NDM \
+  /var/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/NDM \
+  .
+]
+
+
+create_lib cic -technology ./net/tech/NDM/saed14rvt_1p9m.tf -ref_libs ./ref/lib/NDM/saed14rvt_frame_only.ndm/
+
+read_verilog ../source/CIC_ADPCM_synthWrapper.v
+

@@ -1,0 +1,106 @@
+#@ # 
+#@ # Running icc2_shell Version S-2021.06-SP4 for linux64 -- Nov 25, 2021
+#@ # Date:   Thu May  1 16:55:58 2025
+#@ # Run by: fcc9ya@gridley.ece.Virginia.EDU
+#@ 
+
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Logical Cells}
+source ../scripts/setup.tcl
+source ./scripts/setup.tcl
+source ./scripts/definitions.tcl
+source ./scripts/setup.tcl
+source ./scripts/definitions.tcl
+source ./scripts/definitions.tcl
+source ./scripts/definitions.tcl
+source ./scripts/definitions.tcl
+create_lib -ref_libs {/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/NDM/saed14rvt_frame_only.ndm/} -technology /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/tech/NDM/saed14rvt_1p9m.tf cic
+create_ndm_lib
+file /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/NDM/saed14rvt_frame_only.ndm/
+set search_path ""
+set link_library {ref/lib/db_nldm/saed14rvt_tt0p8v25c.db}
+set_app_options -list {lib.configuration.default_flow_setup {}};
+set_app_options -list {lib.configuration.output_dir {CLIBs}}
+set_app_options -list {lib.configuration.lef_site_mapping {}}
+set_app_options -list {lib.configuration.process_label_mapping {}}
+set_app_options -list {lib.configuration.display_lm_messages {false}}
+set search_path ""
+set link_library {ref/lib/db_nldm/saed14rvt_tt0p8v25c.db}
+set_app_options -list {lib.configuration.default_flow_setup {}};
+set_app_options -list {lib.configuration.output_dir {CLIBs}}
+set_app_options -list {lib.configuration.lef_site_mapping {}}
+set_app_options -list {lib.configuration.process_label_mapping {}}
+set_app_options -list {lib.configuration.display_lm_messages {false}}
+create_lib -ref_libs {/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/NDM/saed14rvt_frame_only.ndm/} -technology /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/tech/NDM/saed14rvt_1p9m.tf cic
+read_verilog ./source/CIC_ADPCM_synthWrapper.v
+link_block
+initialize_floorplan
+source ./scripts/pg_core_straps.tcl
+source ./scriots/mcmm.tcl
+source ./scripts/mcmm.tcl
+source ./scripts/mcmm.tcl
+source ./scripts/mcmm.tcl
+create_placement -floorplan
+legalizw_placemet
+legalizw_placement
+legalize_placement
+win_set_filter -visible -class cell -filter {hard_macro_margin hard_margin route_blockage_margin soft_margin}
+win_set_filter -visible -class pseudo_bump -filter {deleted}
+win_set_filter -visible -class placement_blockage -filter {wiring} -layer {0-72}
+win_set_filter -expand_cell_types {soft_macro  }
+win_set_select_class -visible {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pin_blockage block_shielding topology_node topology_edge topology_repeater annotation_shape core_area die_area edit_group shape via terminal fill_cell placement_blockage }
+win_set_filter -class cell -filter {array hard_macro_margin hard_margin route_blockage_margin soft_margin}
+win_set_filter -class pseudo_bump -filter {deleted}
+win_set_filter -class placement_blockage -filter {wiring} -layer {0-72}
+win_set_select_class {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pin_blockage topology_node topology_edge topology_repeater annotation_shape edit_group shape via placement_blockage }
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {28.319 12.761}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {28.297 12.778}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {28.275 12.794}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {28.279 12.784}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {28.283 12.787}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {28.285 12.792}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {28.289 12.807}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {28.267 12.773}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {60.678 -1.369}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {47.227 -0.626}
+win_select_objects -within {{40.237 -1.877} {40.493 -0.344}} -slct_targets global -slct_targets_operation clear
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {40.237 -1.520}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {46.744 -3.025}
+win_select_objects -within {{54.738 -8.742} {58.425 14.605}} -slct_targets global -slct_targets_operation clear
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {41.631 6.822}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {37.711 6.843}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {35.739 6.864}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {34.740 6.859}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {35.735 6.854}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {37.696 6.824}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {41.631 6.822}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {41.631 6.822}
+gui_zoom -window [gui_get_current_window -view] -full
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {3.476 29.181}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {3.473 29.185}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {3.470 29.188}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.827 29.011}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.837 29.015}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.831 29.018}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.792 29.064}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {6.815 29.145}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {-36.676 8.992}
+clock_opt
+route_group -all_clock_nets -reuse_existing_global_route true -stop_after_global_route true
+
+route_group -all_clock_nets -reuse_existing_global_route true -stop_after_global_route true
+redirect $::sh_dev_null { set_app_options -name opt.internal.current_block_utilization -value [report_utilization] }
+
+set_app_options -as_user_default -list {route.global.global_route_topology_style 1}
+route_group -all_clock_nets -reuse_existing_global_route true
+set_app_options -as_user_default -list {route.global.global_route_topology_style 0}
+
+
+redirect $::sh_dev_null { set_app_options -name opt.internal.current_block_utilization -value [report_utilization] }
+
+
+
+
+create_routing_rule _snps_autoNdr_power -spacings {M1 {0.040000} M2 {0.040000} M3 {0.040000} M4 {0.080000} M5 {0.080000} M6 {0.080000} M7 {0.080000} M8 {0.080000} M9 {0.080000} MRDL {4.000000} }  -spacing_weight_levels {M1 { medium } M2 { medium } M3 { medium } M4 { medium } M5 { medium } M6 { medium } M7 { medium } M8 { medium } M9 { medium } MRDL { medium } } -spacing_length_thresholds {M1 { 1.0 } M2 { 1.0 } M3 { 1.0 } M4 { 1.0 } M5 { 1.0 } M6 { 1.0 } M7 { 1.0 } M8 { 1.0 } M9 { 1.0 } MRDL { 1.0 } }
+remove_routing_rules _snps_autoNdr_power
+route_auto
+source ./scripts/insert_stdcell.tcl

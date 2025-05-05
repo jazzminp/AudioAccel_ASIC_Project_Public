@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : CIC_ADPCM_Wrapper
+Version: S-2021.06-SP4
+Date   : Sat Apr 26 21:36:03 2025
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_tt0p8v25c (File: /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/lib/saed14rvt_tt0p8v25c.db)
+
+Number of ports:                            9
+Number of nets:                          1962
+Number of cells:                         1863
+Number of combinational cells:           1615
+Number of sequential cells:               248
+Number of macros/black boxes:               0
+Number of buf/inv:                        279
+Number of references:                      32
+
+Combinational area:                479.866195
+Buf/Inv area:                       49.861199
+Noncombinational area:             262.004408
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1381.211451
+
+Total cell area:                   741.870604
+Total area:                       2123.082055
+1

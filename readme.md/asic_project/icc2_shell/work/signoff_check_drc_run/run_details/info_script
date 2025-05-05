@@ -1,0 +1,71 @@
+#! /bin/sh
+
+COLORTERM='truecolor'; export COLORTERM
+CS_HOME='/app6/synopsys/syn/S-2021.06-SP4'; export CS_HOME
+DBUS_SESSION_BUS_ADDRESS='unix:abstract=/tmp/dbus-mhmy3rJJUV,guid=b2eba4207e644c7ba64612a368144cf9'; export DBUS_SESSION_BUS_ADDRESS
+DISPLAY=':59.0'; export DISPLAY
+EDITOR='/usr/bin/vim'; export EDITOR
+FLEXLM_BORROWFILE='/var/home/fcc9ya/.gridley.ece.Virginia.EDU-borrow.txt'; export FLEXLM_BORROWFILE
+FONTCONFIG_USE_MMAP='0'; export FONTCONFIG_USE_MMAP
+HISTCONTROL='ignoredups'; export HISTCONTROL
+HISTSIZE='1000'; export HISTSIZE
+HOME='/var/home/fcc9ya'; export HOME
+ICV_HOME_DIR='/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3'; export ICV_HOME_DIR
+ICV_REVERT='NDM_DESIGN_ATTACHED_ERROR_DATA'; export ICV_REVERT
+ICV_RUN_DETAILS_DIRECTORY='/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details'; export ICV_RUN_DETAILS_DIRECTORY
+IMSETTINGS_INTEGRATE_DESKTOP='yes'; export IMSETTINGS_INTEGRATE_DESKTOP
+IMSETTINGS_MODULE='none'; export IMSETTINGS_MODULE
+ITK_LIBRARY='/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icc2/S-2021.06-SP4//auxx/tcllib/lib/itk4.0.2'; export ITK_LIBRARY
+KRB5CCNAME='KEYRING:persistent:15601803'; export KRB5CCNAME
+LC_ALL='C'; export LC_ALL
+LD_LIBRARY_PATH='/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3/lib-u/LINUX.64/MongoDB/lib64:/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3/lib-u/LINUX.64/qt/opt:/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3/lib-u/LINUX.64/fwmerge:/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3/lib-u/LINUX.64/tbb:/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3/lib-u/LINUX.64/OADM6/lib/opt:'; export LD_LIBRARY_PATH
+LESSOPEN='||/usr/bin/lesspipe.sh %s'; export LESSOPEN
+LM_LICENSE_FILE='27284@license2.ece.virginia.edu'; export LM_LICENSE_FILE
+MAIL='/var/spool/mail/fcc9ya'; export MAIL
+OA_PLUGIN_PATH='/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3/lib-u/LINUX.64/OADM6/data/plugins'; export OA_PLUGIN_PATH
+PATH='/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3/bin/LINUX64_L31el:/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3/contrib/bin/LINUX64_L31el:/var/home/ece/bin:/var/home/ece/bin:/var/home/ece/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/home/fcc9ya/.local/bin:/var/home/fcc9ya/bin:/var/home/fcc9ya/.local/bin:/var/home/fcc9ya/bin:/app6/synopsys/syn/S-2021.06-SP4/bin:/app6/synopsys/prime/S-2021.06-SP5/bin:/app6/synopsys/asip_designer/R-2020.09/bin:/app6/synopsys/txs/S-2021.06-SP4/bin:/app6/synopsys/vcs/S-2021.09-SP1-1/bin:/app6/synopsys/HSPICE/S-2021.09-SP1/hspice/bin:/app6/synopsys/fm/S-2021.06-SP5/bin:/app6/synopsys/icc2/S-2021.06-SP4/bin:/app6/synopsys/icvalidator/S-2021.06-SP3-3/bin'; export PATH
+PULSE_CLIENTCONFIG='/var/home/fcc9ya/.x2go/C-fcc9ya-59-1746160878_stDXFCE_dp32/.pulse-client.conf'; export PULSE_CLIENTCONFIG
+QT_GRAPHICSSYSTEM='native'; export QT_GRAPHICSSYSTEM
+QT_XCB_NATIVE_PAINTING='1'; export QT_XCB_NATIVE_PAINTING
+SESSION_MANAGER='local/unix:@/tmp/.ICE-unix/59347,unix/unix:/tmp/.ICE-unix/59347'; export SESSION_MANAGER
+SHELL='/bin/bash'; export SHELL
+SNPSLMD_LICENSE_FILE='27284@license2.ece.virginia.edu'; export SNPSLMD_LICENSE_FILE
+SNPS_WORK_DIR='/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/work_dir/create_placement/place_blocks'; export SNPS_WORK_DIR
+SSH_AGENT_PID='59497'; export SSH_AGENT_PID
+SSH_ASKPASS='/usr/libexec/openssh/gnome-ssh-askpass'; export SSH_ASKPASS
+SSH_AUTH_SOCK='/tmp/ssh-MgmyaJgphopx/agent.59347'; export SSH_AUTH_SOCK
+SSH_CLIENT='172.27.157.134 54454 22'; export SSH_CLIENT
+SSH_CONNECTION='172.27.157.134 54454 128.143.231.81 22'; export SSH_CONNECTION
+STARTUP='/usr/bin/env LD_LIBRARY_PATH= xfce4-session'; export STARTUP
+SYNOPSYS='/app6/synopsys/txs/S-2021.06-SP4'; export SYNOPSYS
+SYNOPSYSDIR='/app6/synopsys'; export SYNOPSYSDIR
+SYNOPSYS_LC_ROOT='/app6/synopsys/lc/S-2021.06-SP5/bin'; export SYNOPSYS_LC_ROOT
+SYNOPSYS_SYSTYPE='LINUX64_L31el'; export SYNOPSYS_SYSTYPE
+TIX_LIBRARY='/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icc2/S-2021.06-SP4//auxx/tcllib/lib/tix8.4.3'; export TIX_LIBRARY
+TK_LIBRARY='/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icc2/S-2021.06-SP4//auxx/tcllib/lib/tk8.6'; export TK_LIBRARY
+TK_TABLE_LIBRARY='EMBEDDED_RUNTIME'; export TK_TABLE_LIBRARY
+TK_TABLE_LIBRARY_FILE=' TBL_RUNTIME '; export TK_TABLE_LIBRARY_FILE
+USER='fcc9ya'; export USER
+VCS_HOME='/app6/synopsys/vcs/S-2021.09-SP1-1'; export VCS_HOME
+VTE_VERSION='5204'; export VTE_VERSION
+WINDOWID='35653064'; export WINDOWID
+X2GO_AGENT_PID='58920'; export X2GO_AGENT_PID
+X2GO_SESSION='fcc9ya-59-1746160878_stDXFCE_dp32'; export X2GO_SESSION
+XAUTHORITY='/var/home/fcc9ya/.Xauthority'; export XAUTHORITY
+XDG_DATA_DIRS='/var/home/fcc9ya/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'; export XDG_DATA_DIRS
+XDG_RUNTIME_DIR='/run/user/15601803'; export XDG_RUNTIME_DIR
+XDG_SESSION_ID='1441'; export XDG_SESSION_ID
+XSESSION_EXEC='xfce4-session'; export XSESSION_EXEC
+__ICV_CALLED_THRU_SCRIPT='1'; export __ICV_CALLED_THRU_SCRIPT
+__ICV_GROUP_KEY_AIAS_ENV_VARS=''; export __ICV_GROUP_KEY_AIAS_ENV_VARS
+__ICV_INDIV_KEY_AIAS_ENV_VARS=''; export __ICV_INDIV_KEY_AIAS_ENV_VARS
+__ICV_OUTPUT_LOG_CONTROL='44741'; export __ICV_OUTPUT_LOG_CONTROL
+__ICV_OUTPUT_LOG_NOECHO='59502'; export __ICV_OUTPUT_LOG_NOECHO
+__ICV_OUTPUT_LOG_STDERR='56689'; export __ICV_OUTPUT_LOG_STDERR
+__ICV_OUTPUT_LOG_STDOUT='43964'; export __ICV_OUTPUT_LOG_STDOUT
+__ICV_SERVICE_MAPPER_HOST='gridley.ece.virginia.edu'; export __ICV_SERVICE_MAPPER_HOST
+__ICV_SERVICE_MAPPER_PORT='41462'; export __ICV_SERVICE_MAPPER_PORT
+__ICV_SERVICE_MAPPER_TOKEN='e2687ff5ca511e18815eb1e671896d82'; export __ICV_SERVICE_MAPPER_TOKEN
+icv_WRITE_TECH_FILE_WITH_UPDATES='/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/tech.tf'; export icv_WRITE_TECH_FILE_WITH_UPDATES
+
+exec icv_pmap_info

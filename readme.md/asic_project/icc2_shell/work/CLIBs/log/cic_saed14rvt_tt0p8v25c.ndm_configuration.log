@@ -1,0 +1,236 @@
+ 
+                              Library Manager (TM)
+
+             Version S-2021.06-SP4 for linux64 - Nov 25, 2021 -SLE
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+set search_path {. .}
+. .
+setenv RUN_RESULT /tmp/.tARL181349/_rrGv2kBl
+/tmp/.tARL181349/_rrGv2kBl
+set_current_mismatch_config auto_fix
+1
+set_app_options -name lib.workspace.build_script -value CLIBs/.scripts/saed14rvt_tt0p8v25c.tcl
+lib.workspace.build_script CLIBs/.scripts/saed14rvt_tt0p8v25c.tcl
+#suppress_messages
+source -echo -verbose CLIBs/.scripts/saed14rvt_tt0p8v25c.tcl
+set NDM_LIBS {}
+set FRAME_LIBS {/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/NDM/saed14rvt_frame_only.ndm}
+/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/NDM/saed14rvt_frame_only.ndm
+set LEF_FILES {}
+set DB_FILES {/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/db_nldm/saed14rvt_tt0p8v25c.db}
+/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/db_nldm/saed14rvt_tt0p8v25c.db
+set TECH_FILE "/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/tech/NDM/saed14rvt_1p9m.tf"
+/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/tech/NDM/saed14rvt_1p9m.tf
+set_app_options -name lib.workspace.create_cached_lib -value true
+lib.workspace.create_cached_lib true
+#suppress_messages
+set_app_options -name lib.workspace.allow_read_aggregate_lib -value true
+lib.workspace.allow_read_aggregate_lib true
+create_workspace saed14rvt_tt0p8v25c -scale_factor 10000
+... created workspace saed14rvt_tt0p8v25c
+foreach frame $FRAME_LIBS {
+  read_ndm $frame
+}
+Information: Loading library file '/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/NDM/saed14rvt_frame_only.ndm' (FILE-007)
+read_db $DB_FILES
+Information: Loading db file '/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/lib/db_nldm/saed14rvt_tt0p8v25c.db' (FILE-007)
+{saed14rvt_tt0p8v25c}
+process_workspaces -check_options {-allow_missing} -force -directory CLIBs -output saed14rvt_tt0p8v25c.ndm
+Checking libraries...
+Information: Only one logical library loaded - internal checks only (LM-005)
+Using saed14rvt_tt0p8v25c as the base library.
+Error: Port x1 missing on saed14rvt_tt0p8v25c/SAEDRVT14_OAI222_0P5/timing (NDM-031)
+Warning:  Port x1 on library cell SAEDRVT14_OAI222_0P5 has been created as a placeholder for a missing logical port.  (LM-113)
+Error: Port x1 missing on saed14rvt_tt0p8v25c/SAEDRVT14_OAI222_1/timing (NDM-031)
+Warning:  Port x1 on library cell SAEDRVT14_OAI222_1 has been created as a placeholder for a missing logical port.  (LM-113)
+Error: Port x1 missing on saed14rvt_tt0p8v25c/SAEDRVT14_OAI222_2/timing (NDM-031)
+Warning:  Port x1 on library cell SAEDRVT14_OAI222_2 has been created as a placeholder for a missing logical port.  (LM-113)
+Error: Port x1 missing on saed14rvt_tt0p8v25c/SAEDRVT14_OAI222_4/timing (NDM-031)
+Warning:  Port x1 on library cell SAEDRVT14_OAI222_4 has been created as a placeholder for a missing logical port.  (LM-113)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_12. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_3. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_4. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_5. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_6. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_8. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_12. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_16. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_20. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_24. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_3. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_4. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_5. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_6. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_8. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_0P5. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_4. (LM-175)
+Warning: Mismatched PG pins between the logic library and FRAME for block saed14rvt_tt0p8v25c/SAEDRVT14_ISOFSDPQ_PECO_4:  - Extra DB/power  :  VDD. (LM-033)
+Warning: Mismatched PG pins between the logic library and FRAME for block saed14rvt_tt0p8v25c/SAEDRVT14_ISOFSDPQ_PECO_8:  - Extra DB/ground :  VSS. (LM-033)
+Warning: More than one power pin or ground pin of the antenna diode for design SAEDRVT14_TIEDIN_PV1ECO_6 (LM-107)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_0P5/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_0P5. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_1/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_1. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_2/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_2. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_4/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_4. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_6/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_6. (LM-175)
+Error: Port SAVEN missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ_1/timing (NDM-031)
+Error: Port RESTORE missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ_1/timing (NDM-031)
+Error: Port CKP missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ_1/timing (NDM-031)
+Error: Port CKN missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ_1/timing (NDM-031)
+Warning:  Port SAVEN on library cell SAEDRVT14_SRRDPQ_1 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port RESTORE on library cell SAEDRVT14_SRRDPQ_1 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port CKP on library cell SAEDRVT14_SRRDPQ_1 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port CKN on library cell SAEDRVT14_SRRDPQ_1 has been created as a placeholder for a missing logical port.  (LM-113)
+Error: Port CKN missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ_2/timing (NDM-031)
+Error: Port CKP missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ_2/timing (NDM-031)
+Error: Port RESTORE missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ_2/timing (NDM-031)
+Error: Port SAVEN missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ_2/timing (NDM-031)
+Warning:  Port CKN on library cell SAEDRVT14_SRRDPQ_2 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port CKP on library cell SAEDRVT14_SRRDPQ_2 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port RESTORE on library cell SAEDRVT14_SRRDPQ_2 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port SAVEN on library cell SAEDRVT14_SRRDPQ_2 has been created as a placeholder for a missing logical port.  (LM-113)
+Error: Port CLK missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ4_1/timing (NDM-031)
+Error: Port CK missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ4_1/frame (NDM-031)
+Warning:  Port CLK on library cell SAEDRVT14_SRRDPQ4_1 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Missing physical library port, create placeholder physical library port CK for library cell SAEDRVT14_SRRDPQ4_1. (LM-112)
+Error: Port CKN missing on saed14rvt_tt0p8v25c/SAEDRVT14_SSRRDPQ_1/timing (NDM-031)
+Error: Port CKP missing on saed14rvt_tt0p8v25c/SAEDRVT14_SSRRDPQ_1/timing (NDM-031)
+Warning:  Port CKN on library cell SAEDRVT14_SSRRDPQ_1 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port CKP on library cell SAEDRVT14_SSRRDPQ_1 has been created as a placeholder for a missing logical port.  (LM-113)
+Error: Port CKN missing on saed14rvt_tt0p8v25c/SAEDRVT14_SSRRDPQ_2/timing (NDM-031)
+Error: Port CKP missing on saed14rvt_tt0p8v25c/SAEDRVT14_SSRRDPQ_2/timing (NDM-031)
+Warning:  Port CKN on library cell SAEDRVT14_SSRRDPQ_2 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port CKP on library cell SAEDRVT14_SSRRDPQ_2 has been created as a placeholder for a missing logical port.  (LM-113)
+Error: Port CKN missing on saed14rvt_tt0p8v25c/SAEDRVT14_SSRRDPQ4_1/timing (NDM-031)
+Error: Port CKP missing on saed14rvt_tt0p8v25c/SAEDRVT14_SSRRDPQ4_1/timing (NDM-031)
+Warning:  Port CKN on library cell SAEDRVT14_SSRRDPQ4_1 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port CKP on library cell SAEDRVT14_SSRRDPQ4_1 has been created as a placeholder for a missing logical port.  (LM-113)
+Error: Port CKN missing on saed14rvt_tt0p8v25c/SAEDRVT14_SSRRDPQ4_2/timing (NDM-031)
+Error: Port CKP missing on saed14rvt_tt0p8v25c/SAEDRVT14_SSRRDPQ4_2/timing (NDM-031)
+Warning:  Port CKN on library cell SAEDRVT14_SSRRDPQ4_2 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port CKP on library cell SAEDRVT14_SSRRDPQ4_2 has been created as a placeholder for a missing logical port.  (LM-113)
+Error: Port VBP missing on saed14rvt_tt0p8v25c/SAEDRVT14_FILL_ECO_15/timing (NDM-031)
+Error: Port VBN missing on saed14rvt_tt0p8v25c/SAEDRVT14_FILL_ECO_15/timing (NDM-031)
+Warning:  Port VBP on library cell SAEDRVT14_FILL_ECO_15 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning:  Port VBN on library cell SAEDRVT14_FILL_ECO_15 has been created as a placeholder for a missing logical port.  (LM-113)
+Warning: Mismatched PG pins between the logic library and FRAME for block saed14rvt_tt0p8v25c/SAEDRVT14_FILL_NNWVDDBRKY2_3:  - Extra DB/power  :  VDD. (LM-033)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_FILLP2/VDDR' from physical source (was missing in logical source) (LM-109)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_FILLP3/VDDR' from physical source (was missing in logical source) (LM-109)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_TAPPP10/VDDR' from physical source (was missing in logical source) (LM-109)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_CAPTTAPP6/VDDR' from physical source (was missing in logical source) (LM-109)
+
+NOTE: check_workspace will restart due to port additions ...
+
+Using saed14rvt_tt0p8v25c as the base library.
+Information: Deriving related power/ground pin for cell SAEDRVT14_OAI222_0P5. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_OAI222_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_OAI222_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_OAI222_4. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_12. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_3. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_4. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_5. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_6. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_8. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_12. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_16. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_20. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_24. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_3. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_4. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_5. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_6. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_8. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_0P5. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_4. (LM-175)
+Warning: Mismatched PG pins between the logic library and FRAME for block saed14rvt_tt0p8v25c/SAEDRVT14_ISOFSDPQ_PECO_4:  - Extra DB/power  :  VDD. (LM-033)
+Warning: Mismatched PG pins between the logic library and FRAME for block saed14rvt_tt0p8v25c/SAEDRVT14_ISOFSDPQ_PECO_8:  - Extra DB/ground :  VSS. (LM-033)
+Warning: More than one power pin or ground pin of the antenna diode for design SAEDRVT14_TIEDIN_PV1ECO_6 (LM-107)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_0P5/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_0P5. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_1/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_1. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_2/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_2. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_4/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_4. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_6/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_6. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_SRRDPQ_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_SRRDPQ_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_SRRDPQ4_1. (LM-175)
+Error: Port CK missing on saed14rvt_tt0p8v25c/SAEDRVT14_SRRDPQ4_1/frame (NDM-031)
+Warning:  Missing physical library port, create placeholder physical library port CK for library cell SAEDRVT14_SRRDPQ4_1. (LM-112)
+Information: Deriving related power/ground pin for cell SAEDRVT14_SSRRDPQ_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_SSRRDPQ_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_SSRRDPQ4_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_SSRRDPQ4_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_FILL_ECO_15. (LM-175)
+Warning: Mismatched PG pins between the logic library and FRAME for block saed14rvt_tt0p8v25c/SAEDRVT14_FILL_NNWVDDBRKY2_3:  - Extra DB/power  :  VDD. (LM-033)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_FILLP2/VDDR' from physical source (was missing in logical source) (LM-109)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_FILLP3/VDDR' from physical source (was missing in logical source) (LM-109)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_TAPPP10/VDDR' from physical source (was missing in logical source) (LM-109)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_CAPTTAPP6/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Combined 922 physical designs:922 with a frame view (898 had ports reordered); (LM-034)
+Information: Skipped 131 physical designs (LM-052)
+
+Workspace check succeeded!
+... wrote CLIBs/saed14rvt_tt0p8v25c.ndm
+... removing library 'saed14rvt_tt0p8v25c'
+... removing library 'saed14rvt_frame_only'
+... lib workspace removed!
+Maximum memory usage for this session: 437.04 MB
+CPU usage for this session:      8 seconds (  0.00 hours)
+Elapsed time for this session:     10 seconds (  0.00 hours)
+Thank you for using Library Manager.
+

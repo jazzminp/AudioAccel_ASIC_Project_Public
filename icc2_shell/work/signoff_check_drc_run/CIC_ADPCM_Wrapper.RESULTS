@@ -1,0 +1,88 @@
+                            RESULTS: RUN ABORTED
+
+                      ###   ####    ###   ####   #####
+                     #   #  #   #  #   #  #   #    #
+                     #####  ####   #   #  ####     #
+                     #   #  #   #  #   #  #  #     #
+                     #   #  ####    ###   #   #    #
+
+===========================================================================
+
+
+---------------------------------------------------------------------------
+ICV Execution
+---------------------------------------------------------------------------
+
+
+                                 IC Validator 
+
+         Version S-2021.06-SP3-3 for linux64 - Jan 25, 2022 cl#7252080
+
+                    Copyright (c) 1996 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Called as: icv -icc2 -f NDM -i cic -p /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work -c CIC_ADPCM_Wrapper -clf /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/slnFile.txt -icc_density_blockage -icc2_error_categories -I /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run -icc2_error_browser INST -icc2_error_cell signoff_check_drc.err -rc /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/signoff_check_drc.rc -I /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/tech/icv_drc/saed14nm_1p9m_drc_rules.rs 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Input file name:        cic
+Top cell name:          CIC_ADPCM_Wrapper
+Layout format:          NDM
+Runset file:            /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/tech/icv_drc/saed14nm_1p9m_drc_rules.rs
+Working directory:      /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run
+Run details directory:  /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details
+Layout error file:      CIC_ADPCM_Wrapper.LAYOUT_ERRORS
+User name:              fcc9ya
+Time started:           2025/05/03 01:37:55AM
+Time ended:             2025/05/03 01:38:26AM
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+---------------------------------------------------------------------------
+Results Summary
+---------------------------------------------------------------------------
+
+IC Validator failed to complete.
+
+- Performing DRC checks and/or device extraction ... ERROR
+    Refer to /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details/saed14nm_1p9m_drc_rules.dp.log
+---------------------------------------------------------------------------
+Run Configuration
+---------------------------------------------------------------------------
+
+Production Environment Variables
+
+HOME = "/var/home/fcc9ya"
+ICV_HOME_DIR = "/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3"
+ICV_REVERT = "NDM_DESIGN_ATTACHED_ERROR_DATA"
+LM_LICENSE_FILE = "27284@license2.ece.virginia.edu"
+PATH = "/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3/bin/LINUX64_L31el:/net/redfox.ece.Virginia.EDU/isan3/app6/synopsys/icvalidator/S-2021.06-SP3-3/contrib/bin/LINUX64_L31el:/var/home/ece/bin:/var/home/ece/bin:/var/home/ece/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/home/fcc9ya/.local/bin:/var/home/fcc9ya/bin:/var/home/fcc9ya/.local/bin:/var/home/fcc9ya/bin:/app6/synopsys/syn/S-2021.06-SP4/bin:/app6/synopsys/prime/S-2021.06-SP5/bin:/app6/synopsys/asip_designer/R-2020.09/bin:/app6/synopsys/txs/S-2021.06-SP4/bin:/app6/synopsys/vcs/S-2021.09-SP1-1/bin:/app6/synopsys/HSPICE/S-2021.09-SP1/hspice/bin:/app6/synopsys/fm/S-2021.06-SP5/bin:/app6/synopsys/icc2/S-2021.06-SP4/bin:/app6/synopsys/icvalidator/S-2021.06-SP3-3/bin"
+SNPSLMD_LICENSE_FILE = "27284@license2.ece.virginia.edu"
+USER = "fcc9ya"
+
+7 production environment variables set.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Debug Environment Variables
+
+icv_WRITE_TECH_FILE_WITH_UPDATES = "/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/tech.tf"
+
+1 debug environment variable set.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+

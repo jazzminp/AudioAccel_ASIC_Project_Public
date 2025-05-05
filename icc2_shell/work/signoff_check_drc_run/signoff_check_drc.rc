@@ -1,0 +1,14 @@
+/* ============================================ */
+/*   Environment setup for signoff_check_drc   */
+/* ============================================ */
+#define SNPSINDESIGN 
+#define USE_ICC2 
+#define RESOLUTION_OPTIONS_LAYOUT_RESOLUTION_CHECK {}
+#define SNPSINDESIGN_DRC_RUN_DIRECTORY /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work
+#define NDM_OPTIONS_DRC_BLACK_BOX_CELLS {"*","!CIC_ADPCM_Wrapper"}
+#define NDM_OPTIONS_MISSING_CELL ABORT
+#define NDM_OPTIONS_INSTANCE_NAMES DISCARD
+#define NDM_OPTIONS_INTERNAL_DESIGNS {{use=FILL_USE,read_from=ALL,out_of_date=DISCARD}}
+#define NDM_OPTIONS_MERGE_BLOCKAGE_WITH_LAYER { views={DESIGN_VIEW,FRAME_VIEW}, cells={"*","!"+get_top_cell()} }
+#define NDM_OPTIONS_SEARCH_PATH "/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work  ."
+#define ERROR_OPTIONS_ERROR_LIMIT_PER_CHECK 1000

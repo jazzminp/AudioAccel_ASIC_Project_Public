@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CIC_ADPCM_Wrapper
+Version: S-2021.06-SP4
+Date   : Fri May  2 01:22:17 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed14rvt_tt0p8v25c (File: /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/dc_shell/lib/saed14rvt_tt0p8v25c.db)
+
+
+Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CIC_ADPCM_Wrapper      ForQA             saed14rvt_tt0p8v25c
+
+
+Global Operating Voltage = 0.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.1540 uW   (72%)
+  Net Switching Power  = 443.0873 nW   (28%)
+                         ---------
+Total Dynamic Power    =   1.5971 uW  (100%)
+
+Cell Leakage Power     =   7.8705 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  1.7646e-03            0.3056          178.3437            0.3075  (  19.16%)
+register           1.1057        7.9198e-02        3.5704e+03            1.1885  (  74.05%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  4.6483e-02        5.8329e-02        4.1217e+03            0.1089  (   6.79%)
+--------------------------------------------------------------------------------------------------
+Total              1.1540 uW         0.4431 uW     7.8705e+03 pW         1.6049 uW
+1

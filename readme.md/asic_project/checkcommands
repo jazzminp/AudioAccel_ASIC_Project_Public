@@ -1,0 +1,59 @@
+check_3d_design                        N, U
+check_boundary_cells                   N
+check_bufferability                    N, R
+check_bump_spacing                     N
+check_busplan_constraints              N
+check_clock_gate_library_cell_availability N, R
+check_clock_trees                      N
+check_consistency_settings             N
+check_design                           N, R
+check_design_for_clock_trunk_planning  N
+check_design_states                    N
+check_duplicates                       N, U
+check_equivalent_power_domains         N, R
+check_error                            N
+check_feedthroughs                     N
+check_finfet_grid                      N, R
+check_floorplan_rules                  N, U
+check_freeze_silicon                   N
+check_hier_design                      N
+check_host_options                     N
+check_io_placement                     N
+check_isolation_coverage               N
+check_legality                         N
+check_legalizer_sanity                 N
+check_libcell_pin_access               N
+check_license                          N
+check_lvs                              N, U
+check_mib_alignment                    N
+check_mib_for_pin_placement            N
+check_multibit_library                 N, R
+check_mv_design                        N
+check_netlist                          N, R
+check_objects_for_push_down            N
+check_pg_connectivity                  N
+check_pg_drc                           N, R
+check_pg_missing_vias                  N
+check_physical_constraints             N, R
+check_pin_placement                    N, R
+check_placement_constraints            N
+check_pre_pin_placement                N
+check_pre_place_io                     N
+check_rdl_routes                       N, U
+check_routability                      N
+check_routes                           N
+check_routing_corridors                N, R
+check_rp_constraints                   N, U
+check_sadp_tracks                      N
+check_safety_intent                    N
+check_scan_chain                       N
+check_secondary_pg_placement_constraints N
+check_shapes                           N, R
+check_stage_settings                   N
+check_starrc_in_design                 N
+check_supply_equivalence               N, R
+check_targeted_boundary_cells          N
+check_tcd_cells                        N
+check_timing                           N, R
+check_topology_plans                   N, U
+check_variants                         N

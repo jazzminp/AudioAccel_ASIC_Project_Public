@@ -1,0 +1,10 @@
+#!/bin/sh
+total=0
+pathsize=`/usr/bin/du -s --block-size=1 /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details --exclude=group | awk '{print $1}'`
+total=$(($total+$pathsize))
+group=0
+group=`/usr/bin/du -s --block-size=1 /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details/group | awk '{print $1}'`
+echo $group > /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details/group/duse_group.tmp && \
+mv /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details/group/duse_group.tmp /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details/group/duse_group
+echo $total > /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details/duse_manager_res.tmp && \
+mv /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details/duse_manager_res.tmp /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/run_details/duse_manager_res

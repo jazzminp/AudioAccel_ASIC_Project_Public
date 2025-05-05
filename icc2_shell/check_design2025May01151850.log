@@ -1,0 +1,25 @@
+****************************************
+ Report : check_design
+ Options: { timing }
+ Design : CIC_ADPCM_Wrapper
+ Version: S-2021.06-SP4
+ Date   : Thu May  1 15:18:50 2025
+****************************************
+
+Running atomic-check 'timing'
+Information: Timer using 1 threads
+1
+
+  *** EMS Message summary ***
+  Total 0 EMS messages : 0 errors, 0 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+   Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+       PVT-014                 2 Network of supply net %s has no %s voltage defined in corner %s.
+       PVT-032                 1 Corner %s: no PVT mismatches.
+  ----------------------------------------------------------------------------------------------------
+  Total 3 non-EMS messages : 0 errors, 2 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------

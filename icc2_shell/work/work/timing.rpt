@@ -1,0 +1,76 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CIC_ADPCM_Wrapper
+Version: S-2021.06-SP4
+Date   : Sat Apr 26 21:36:03 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
+Wire Load Model Mode: top
+
+  Startpoint: cic/diff1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cic/output_register_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CIC_ADPCM_Wrapper  8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cic/diff1_reg[0]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)         0.00       0.00 r
+  cic/diff1_reg[0]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)          0.02       0.02 r
+  U2014/X (SAEDRVT14_INV_0P5)                             0.01       0.03 f
+  U1833/X (SAEDRVT14_NR2_ISO_1)                           0.02       0.05 r
+  intadd_1/U19/CO (SAEDRVT14_ADDF_V1_1)                   0.05       0.10 r
+  intadd_1/U18/CO (SAEDRVT14_ADDF_V1_1)                   0.05       0.15 r
+  intadd_1/U17/CO (SAEDRVT14_ADDF_V1_1)                   0.05       0.19 r
+  intadd_1/U16/CO (SAEDRVT14_ADDF_V1_1)                   0.05       0.24 r
+  intadd_1/U15/CO (SAEDRVT14_ADDF_V1_1)                   0.05       0.29 r
+  intadd_1/U14/CO (SAEDRVT14_ADDF_V1_1)                   0.05       0.33 r
+  intadd_1/U13/CO (SAEDRVT14_ADDF_V1_1)                   0.05       0.38 r
+  intadd_1/U12/CO (SAEDRVT14_ADDF_V1_1)                   0.05       0.42 r
+  intadd_1/U11/CO (SAEDRVT14_ADDF_V1_1)                   0.05       0.47 r
+  intadd_1/U10/CO (SAEDRVT14_ADDF_V1_1)                   0.05       0.51 r
+  intadd_1/U9/CO (SAEDRVT14_ADDF_V1_1)                    0.05       0.56 r
+  intadd_1/U8/CO (SAEDRVT14_ADDF_V1_1)                    0.05       0.61 r
+  intadd_1/U7/CO (SAEDRVT14_ADDF_V1_1)                    0.05       0.65 r
+  intadd_1/U6/CO (SAEDRVT14_ADDF_V1_1)                    0.05       0.70 r
+  intadd_1/U5/CO (SAEDRVT14_ADDF_V1_1)                    0.05       0.74 r
+  intadd_1/U4/CO (SAEDRVT14_ADDF_V1_1)                    0.05       0.79 r
+  intadd_1/U3/S (SAEDRVT14_ADDF_V1_1)                     0.06       0.85 f
+  intadd_0/U3/S (SAEDRVT14_ADDF_V1_1)                     0.05       0.90 r
+  U1130/X (SAEDRVT14_INV_0P5)                             0.01       0.91 f
+  U809/X (SAEDRVT14_OAI21_0P5)                            0.02       0.93 r
+  U803/X (SAEDRVT14_NR2_ISO_1)                            0.02       0.95 f
+  U801/X (SAEDRVT14_INV_0P5)                              0.01       0.96 r
+  U796/X (SAEDRVT14_AOI21_0P75)                           0.02       0.97 f
+  U795/X (SAEDRVT14_EN3_U_0P5)                            0.03       1.01 f
+  U2217/X (SAEDRVT14_OAI22_0P5)                           0.01       1.02 r
+  cic/output_register_reg[19]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                          0.01       1.03 r
+  data arrival time                                                  1.03
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  cic/output_register_reg[19]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                          0.00      10.00 r
+  library setup time                                     -0.03       9.97
+  data required time                                                 9.97
+  --------------------------------------------------------------------------
+  data required time                                                 9.97
+  data arrival time                                                 -1.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.94
+
+
+1

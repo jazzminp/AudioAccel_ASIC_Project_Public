@@ -1,0 +1,49 @@
+
+                                 IC Validator 
+
+         Version S-2021.06-SP3-3 for linux64 - Jan 25, 2022 cl#7252080
+
+                    Copyright (c) 1996 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Called as: icv -icc2 -f NDM -i cic -p /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work -c CIC_ADPCM_Wrapper -clf /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/slnFile.txt -icc_density_blockage -icc2_error_categories -I /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run -icc2_error_browser INST -icc2_error_cell signoff_check_drc.err -rc /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run/signoff_check_drc.rc -I /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/work/signoff_check_drc_run /net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/tech/icv_drc/saed14nm_1p9m_drc_rules.rs 
+
+CLF: -sln "19 21 23 25 27 29 31 33 35 47 20 22 24 26 28 30 32 34 48 " 
+
+ICV_REVERT variables set:
+  NDM_DESIGN_ATTACHED_ERROR_DATA: revert back to external file for NDM error data
+
+WARNING: Unable to find program "rsh". Using "ssh" instead.
+
+Parsing runset "/net/marysrock.ece.Virginia.EDU/maryisan/users/fcc9ya/synopsys/asic/asic_project/icc2_shell/ref/tech/icv_drc/saed14nm_1p9m_drc_rules.rs"
+
+Parsing finished
+Saved runset to cache: /var/home/fcc9ya/.icvrscache/f93a5f9e160ffd57a3db4d656973b8b9-D9F3AC74-351C-43B9-A6EC-E903A717CAE0-gridley.ece.Virginia.EDU-262814.rscache
+Runset Compile Time=0:00:11 User=9.56 Sys=0.23 Mem=1.014 GB
+
+Virtual Machine Init Time=0:00:00 User=0.01 Sys=0.01 Mem=1.014 GB
+
+
+No such feature exists.
+Feature:       ICValidator-Manager
+License path:  27284@license2.ece.virginia.edu:
+FlexNet Licensing error:-5,234
+IC Validator ICC2 In-Design requires IC Validator ADV, IC Validator Base, or IC Validator Elite licensing.
+IC Validator NDM format requires IC Validator ADV, IC Validator Base, or IC Validator Elite licensing.
+License denied!
+IC Validator Run: Time=0:00:33
+IC Validator did not complete.
+IC Validator did not complete.
