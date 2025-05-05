@@ -112,24 +112,26 @@ Figure 1: Showing Initial Vivado Simulation – Run Behavioral Simualtion
 netlist optimized for area and timing.
 
 ![image](https://github.com/user-attachments/assets/7c286695-c03a-4759-b332-f53471168d48)
-Opening schematic view of CIC
+Figure 2: Opening schematic view of CIC Filer
 
 ![image](https://github.com/user-attachments/assets/cf56eb25-127b-4388-acec-2af8024130fa)
 
-Design view from DC
+Figure 3: Design view from DC
 
 ![image](https://github.com/user-attachments/assets/8a1f646d-df98-40ac-9d6d-86c1c4ca71e7)
-Design view from DC after compile
+Figure 4: Design view from DC after compile
+
 •	Formal verification via FM Shell ensured functional equivalence between RTL and synthesized 
 netlist across different input scenarios—critical for ASIC reliability.
+
 ![image](https://github.com/user-attachments/assets/21b4e3bf-7717-4258-820d-5deab9d51808)
-Setup the Design Window
+Figure 5: Setup the Design Window
 ![image](https://github.com/user-attachments/assets/99276c1c-33b1-4571-957d-bc69ec2c9c21)
-Match compare points
+Figure 6: Match compare points
 ![image](https://github.com/user-attachments/assets/69764079-afc5-475a-b30d-862348634cc1)
-Verify the design
+Figure 7: Verify the design
 ![image](https://github.com/user-attachments/assets/c6aa26d9-ddeb-4c9a-bf4a-425f57984935)
-sdc schematic 
+Figure 8: SDC schematic 
 
 
 3. Physical Implementation
@@ -137,21 +139,32 @@ sdc schematic
 key objectives like clock routing, congestion reduction, and timing closure were addressed.
 
 ![image](https://github.com/user-attachments/assets/4cbc354d-4d25-4757-b98b-ae6900d4149d)
- Design view after importing
-![image](https://github.com/user-attachments/assets/30144680-2dd4-467b-83f8-b2285e109f6e)
-![image](https://github.com/user-attachments/assets/39467acd-e163-49aa-8779-be77e72fa205)
- Initialize floorplan window
-![image](https://github.com/user-attachments/assets/d5643ce1-49f7-49f4-a5a5-80356560f613)
-. After Power and Ground Planning
-![image](https://github.com/user-attachments/assets/996a13db-74f6-4249-b446-a5ed0026d4e3)
-![image](https://github.com/user-attachments/assets/6cb6ec1e-9610-4f17-ba1a-af3fb264d8b6)
-![image](https://github.com/user-attachments/assets/6a16693f-bcb2-4033-9d8b-b901cf39750c)
+Figure 9: Design view after importing
 
+![image](https://github.com/user-attachments/assets/39467acd-e163-49aa-8779-be77e72fa205)
+Figure 10: Initialize floorplan window
+
+![image](https://github.com/user-attachments/assets/996a13db-74f6-4249-b446-a5ed0026d4e3)
+Figure 11: Create Floor Plan 
+
+![image](https://github.com/user-attachments/assets/d5643ce1-49f7-49f4-a5a5-80356560f613)
+Figure 12: Power and Ground Planning
+
+![image](https://github.com/user-attachments/assets/30144680-2dd4-467b-83f8-b2285e109f6e)
+Figure 13: Clock Opt command
+
+![image](https://github.com/user-attachments/assets/6cb6ec1e-9610-4f17-ba1a-af3fb264d8b6)
+Figure 14: Route Auto
+
+![image](https://github.com/user-attachments/assets/6a16693f-bcb2-4033-9d8b-b901cf39750c)
+Figure 15: Route Eco 
 
 •	Check commands and timing reports were consistently run to ensure DRC/LVS readiness and to 
 confirm physical constraints were being met.
 
 ![image](https://github.com/user-attachments/assets/0d184edc-732d-4341-8319-1b660a49c2ec)
+Figure 16: List of Check Commands used for ICC2 Shell due to Liscence Issues
+
 
 Verification and Simulation
 
@@ -161,15 +174,21 @@ veried that your ICC2 netlist is functionally identical to the synthesized netli
 
 
 ![image](https://github.com/user-attachments/assets/d57f7bd9-4481-4d0f-b34d-6c255d371afd)
+Figure 17: 0 Unmatched Compare Points
+
 ![image](https://github.com/user-attachments/assets/2313bf63-1ee8-4aa6-bd7d-cc07a8a01b73)
+Figure 18:Reverification through FM Shell
+
 ![image](https://github.com/user-attachments/assets/7083334f-d378-4618-9580-5b340de2b6b1)
+Figure 19: Schematic Post ICC – captured from FM Shell 
 
 
 •	The final design passed multiple stages of functional and formal validation, making it suitable for real-time audio applications.
 
 ![image](https://github.com/user-attachments/assets/6c5e4645-6dfc-4f2f-86aa-5b9cd930498e)
+Figure 20: Final Vivado Simulation  - Run Behavioral Simulation
 
-Conclusion
+## Conclusion
 Through careful RTL design, synthesis, verification, and physical implementation, this project
 not only validated a functional CIC-based audio accelerator but also demonstrated a complete 
 ASIC design flow from high-level Verilog to placed-and-routed silicon-ready netlists. This 
