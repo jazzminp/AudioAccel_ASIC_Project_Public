@@ -196,7 +196,9 @@ showcases the team’s technical competency in using professional EDA tools and 
 digital designs for real-world embedded applications.
 
 
-
+## Error 
+![image](https://github.com/user-attachments/assets/5af5bf5a-7110-41ff-af52-46fa11b6ef19)
+Figure 21:  License error during  ICV for DRC and LVS validation 
 
 
 
